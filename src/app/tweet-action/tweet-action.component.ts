@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tweet } from '../model/tweet.model';
 
 @Component({
   selector: 'app-tweet-action',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './tweet-action.component.css'
 })
 export class TweetActionComponent {
+  @Input() tweets!:Tweet
 
 }
