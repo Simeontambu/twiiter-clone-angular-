@@ -1,13 +1,13 @@
-<div class="flex w-full justify-between h-full">
-  <div class="sticky top-0 left-0 h-full overflow-hidden">
-    <h1>Sidebar left</h1>
+<div class="flex w-full justify-between h-full gap-4">
+  <div class=" sticky top-0 left-0 h-screen  flex-1">
+    <app-sidebar-left></app-sidebar-left>
   </div>
   <div
     class="@apply flex-shrink-0 flex-grow-0 w-[700px] font-inter border-l border-r border-gray-700"
   >
     <router-outlet> </router-outlet>
   </div>
-  <div class="sticky top-0 right-0 h-full">
+  <div class="sticky top-0 right-0 h-full flex-1">
     <h1>Sidebar right</h1>
   </div>
 </div>

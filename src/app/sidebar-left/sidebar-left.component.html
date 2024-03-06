@@ -1,1 +1,87 @@
-<p>sidebar-left works!</p>
+<div class="flex flex-col items-center h-screen justify-between">
+  <nav class="">
+    <img
+      src="./../../assets/images/Twitter.svg"
+      alt=""
+      class="ml-2 py-[1.5em]"
+    />
+    <ul>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a routerLink="" class="flex gap-4"
+          ><img src="./../../assets/images/Home-Fill.svg" alt="" /><span
+            >Home</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/Explore.svg" alt="" /><span
+            >Explore</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/Notifications.svg" alt="" /><span
+            >Notifications</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/Messages.svg" alt="" /><span
+            >Messages</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/Bookmarks.svg" alt="" /><span
+            >Bookmarks</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/Lists.svg" alt="" /><span
+            >Lists</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a routerLink="/profile" class="flex gap-4"
+          ><img src="./../../assets/images/Profile.svg" alt="" /><span
+            >Profile</span
+          ></a
+        >
+      </li>
+      <li class="p-[0.6rem] rounded-[30px] font-bold text-xl">
+        <a class="flex gap-4"
+          ><img src="./../../assets/images/More.svg" alt="" /><span
+            >More</span
+          ></a
+        >
+      </li>
+    </ul>
+    <button
+      class="my-[1.2rem] py-[0.9rem] px-[6rem] bg-[#1d9bf0] border-none rounded-[50px]"
+    >
+      Tweet
+    </button>
+  </nav>
+
+  <div class="flex gap-2 items-center">
+    <img src="./../../assets/images/Profile-Photo-setting.svg" alt="" />
+    <div class="flex gap-2">
+      <div>
+        <div class="flex gap-1">
+          <h2>Bradley Ortiz</h2>
+          <img src="./../../assets/images/Private.svg" alt="" />
+        </div>
+        <p class="text-gray-500">{{ "@bradley..." }}</p>
+      </div>
+      <p class="font-bold text-xl">...</p>
+    </div>
+  </div>
+</div>
+
