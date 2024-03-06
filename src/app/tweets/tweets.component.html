@@ -1,4 +1,5 @@
 <div
+*ngFor="let tweets of tweet"
   class="flex justify-start items-start gap-5 py-[1.5em] px-[1rem] border-b border-gray-700"
 >
   <div class="@apply flex-shrink-0 flex-grow-0 w-[70px]">
@@ -6,7 +7,7 @@
   </div>
   <div>
     <div class="flex gap-2">
-      <span>name</span>
+      <span>{{tweets.name}}</span>
       <span>logo</span>
       <span>user</span>
       <span>.</span>
