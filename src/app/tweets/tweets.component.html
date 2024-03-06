@@ -1,24 +1,31 @@
 <div
-*ngFor="let tweets of tweet"
+  *ngFor="let tweets of tweet"
   class="flex justify-start items-start gap-5 py-[1.5em] px-[1rem] border-b border-gray-700"
 >
-  <div >
-    <img src="" alt="user-image" class="@apply flex-shrink-0 flex-grow-0 w-[70px]"/>
+  <div class="flex-shrink-0 flex-grow-0 w-[50px]">
+    <img src="{{ tweets.img }}" alt="user-image" class="w-full h-full rounded-full" />
   </div>
-  <div>
-    <div class="flex gap-2">
-      <span>{{tweets.name}}</span>
-      <img src="./../../assets/images/Verified.svg" alt="">
-      <span>{{tweets.userName}}</span>
-      <span>.</span>
-      <span>{{tweets.timeAgo |date:'mm' }}m</span>
+  <div class="flex flex-col items-start justify-start w-full">
+    <div class="flex flex-col gap-[0.5rem]">
+      <div class="flex justify-start items-center gap-[0.625em] text-base">
+        <span>{{ tweets.name }}</span>
+        <img src="./../../assets/images/Verified.svg" alt="" />
+        <span class="text-gray-500">{{ tweets.userName }}</span>
+        <span class="text-gray-500">.</span>
+        <span class="text-gray-500">{{ tweets.timeAgo | date : "mm" }}m</span>
+      </div>
+      <div>
+        <span class="text-[#d9d9d9] text-base">{{ tweets.tweetContent }}</span>
+      </div>
+      <div *ngIf="tweets.imageTweet" class="w-full">
+        <img
+          src="{{ tweets.imageTweet }}"
+          alt="tweet-image"
+          class="max-w-full h-auto rounded-[50px] border-gray-700 border-solid"
+        />
+      </div>
     </div>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-      aliquam sed sit, veniam magnam beatae dolores maiores amet placeat! Veniam
-      voluptatibus praesentium veritatis ex architecto, quos non dolore ipsa!
-    </div>
-    <img src="" alt="tweet-image" />
+
     <app-tweet-action></app-tweet-action>
   </div>
 </div>

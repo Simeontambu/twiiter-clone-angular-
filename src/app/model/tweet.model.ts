@@ -1,3 +1,3 @@
 export class Tweet {
-    constructor(public id :number, public name: string, public userName: string, public timeAgo: Date, public tweetContent: string) { }
+    constructor(public id :number, public name: string, public userName: string, public timeAgo: Date, public tweetContent: string,public img? :string, public imageTweet? :string) { }
 }
