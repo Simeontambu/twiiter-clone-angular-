@@ -1,3 +1,14 @@
-<h1>bonjour</h1>
+<div class="flex w-full justify-between h-full">
+  <div>
+    <h1>Sidebar left</h1>
+  </div>
+  <div
+    class="@apply flex-shrink-0 flex-grow-0 w-[800px] font-inter border-l border-r border-gray-700"
+  >
+    <router-outlet> </router-outlet>
+  </div>
 
-<router-outlet />
+  <div>
+    <h1>Sidebar right</h1>
+  </div>
+</div>
