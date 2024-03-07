@@ -4,9 +4,11 @@ export class Tweet {
         public userName: string,
         public timeAgo: Date,
         public tweetContent: string,
+        
         public reacts: number,
         public likes: number,
         public retweets: number,public img?: string,
         public imageTweet?: string,
+        public content?: string,
         ) { }
 }

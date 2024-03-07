@@ -1,9 +1,20 @@
 import { Injectable } from "@angular/core";
 import { Tweet } from "../model/tweet.model";
+import { User } from "../model/user.model";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+
 @Injectable({
     providedIn: 'root'
 })
 export class TweetService {
+    // constructor(private http: HttpClient) { }
+    user:User={
+            id: 1,
+            name: "Bradley Ortiz",
+            userName: "@bradley",
+            img: "./../../assets/images/profile-photo.svg"
+        }
     tweet: Tweet[] = [
         {
             id: 1,
@@ -50,4 +61,15 @@ export class TweetService {
             img: "./../../assets/images/logoNewYorkTime.svg"
         }
     ]
+
+    generateUniqueId(): number {
+        let counter = 0;
+        return ++counter;
+    }
+    addTweet(tweet: Tweet): void {
+        this.tweet.unshift(tweet);
+    }
+  
+   
+    
 }

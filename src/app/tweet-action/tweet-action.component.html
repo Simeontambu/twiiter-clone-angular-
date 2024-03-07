@@ -10,8 +10,13 @@
   <span
     class="flex items-center justify-center gap-2"
     (click)="incrementLike()"
+    [class.text-red-500]="tweets.likes > 0"
   >
-    <img src="./../../assets/images/React.svg" alt="" />
+    <img
+      src="./../../assets/images/React.svg"
+      alt=""
+      
+    />
     <span>{{ tweets.likes }}</span>
   </span>
   <span class="flex items-center justify-center gap-2">

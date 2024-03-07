@@ -8,26 +8,32 @@
       class="w-full h-full rounded-full"
     />
   </div>
-  <div class="flex-auto">
-    <textarea
-      name=""
-      id=""
-      class="w-full h-[60px] text-white bg-black border-0 outline-none text-[1.3rem] resize-none pt-[10px] my-[13px] overflow-hidden"
-      placeholder="What's happening"
-    ></textarea>
-    <div class="flex justify-between items-center">
-      <div class="flex gap-2">
-        <img src="./../../assets/images/Media.svg" alt="" />
-        <img src="./../../assets/images/gif.svg" alt="" />
-        <img src="./../../assets/images/Poll.svg" alt="" />
-        <img src="./../../assets/images/gif.svg" alt="" />
-        <img src="./../../assets/images/Schedule.svg" alt="" />
+ 
+    <div class="flex-auto">
+      <form (ngSubmit)="addTweet()">  
+      <textarea
+       [(ngModel)]="newTweet.tweetContent"
+        name="tweetContent"
+        id=""
+        class="w-full h-[60px] text-white bg-black border-0 outline-none text-[1.3rem] resize-none pt-[10px] my-[13px] overflow-hidden"
+        placeholder="What's happening"
+      ></textarea>
+      <div class="flex justify-between items-center">
+        <div class="flex gap-2">
+          <img src="./../../assets/images/Media.svg" alt="" />
+          <img src="./../../assets/images/gif.svg" alt="" />
+          <img src="./../../assets/images/Poll.svg" alt="" />
+          <img src="./../../assets/images/gif.svg" alt="" />
+          <img src="./../../assets/images/Schedule.svg" alt="" />
+        </div>
+        <button
+        type="submit"
+          class="text-white border-none rounded-[50px] bg-[#1d9bf0] py-[0.7rem] px-[1.5em]"
+        >
+          Tweet
+        </button>
       </div>
-      <button
-        class="text-white border-none rounded-[50px] bg-[#1d9bf0] py-[0.7rem] px-[1.5em]"
-      >
-        Tweet
-      </button>
+       </form>
     </div>
-  </div>
+ 
 </div>
