@@ -8,17 +8,17 @@ import { Tweet } from '../model/tweet.model';
 @Component({
   selector: 'app-tweets',
   standalone: true,
-  imports: [CommonModule,TweetActionComponent],
-templateUrl: './tweets.component.html',
+  imports: [CommonModule, TweetActionComponent],
+  templateUrl: './tweets.component.html',
   styleUrl: './tweets.component.css'
 })
 export class TweetsComponent implements OnInit {
-  tweet : Tweet [] =[]
- constructor(private tweetService : TweetService){
- 
- }
- ngOnInit(): void {
-   this.tweet=this.tweetService.tweet
- }
- 
+  tweet: Tweet[] = []
+  constructor(private tweetService: TweetService) {
+
+  }
+  ngOnInit(): void {
+    this.tweet = this.tweetService.tweet
+  }
+
 }

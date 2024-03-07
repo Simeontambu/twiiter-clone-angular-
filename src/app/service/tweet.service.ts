@@ -11,9 +11,9 @@ export class TweetService {
             userName: "@Twitter",
             tweetContent: "hello literally everyone",
             timeAgo: new Date(),
-            reacts:13,
-            likes: 276,
-            retweets:2,
+            reacts: 13,
+            likes: 0,
+            retweets: 2,
             img: "./../../assets/images/logo-rond-twitter.svg"
         },
         {
@@ -22,20 +22,20 @@ export class TweetService {
             userName: "@CNN",
             tweetContent: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti beatae earum saepe tenetur labore laboriosam accusamus esse quisquam error deserunt unde harum amet illo, itaque impedit voluptatum possimus cum sit.",
             timeAgo: new Date(),
-            reacts:43,
-            likes: 876,
-            retweets:32,
+            reacts: 43,
+            likes: 0,
+            retweets: 32,
             img: "./../../assets/images/logoNewYorkTime.svg",
             imageTweet: "./../../assets/images/tweet-image1.png"
         }, {
-            id: 1,
+            id: 3,
             name: "Simeon",
             userName: "@siemon",
             tweetContent: "hello literally everyone",
             timeAgo: new Date(),
-            reacts:103,
-            likes: 76,
-            retweets:24,
+            reacts: 103,
+            likes: 0,
+            retweets: 24,
             img: "./../../assets/images/logo-rond-twitter.svg"
         },
         {
@@ -44,9 +44,9 @@ export class TweetService {
             userName: "@tambu",
             tweetContent: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti beatae earum saepe tenetur labore laboriosam accusamus esse quisquam error deserunt unde harum amet illo, itaque impedit voluptatum possimus cum sit.",
             timeAgo: new Date(),
-            reacts:343,
-            likes: 76,
-            retweets:122,
+            reacts: 343,
+            likes: 0,
+            retweets: 122,
             img: "./../../assets/images/logoNewYorkTime.svg"
         }
     ]

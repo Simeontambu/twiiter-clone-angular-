@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TweetsComponent } from '../tweets/tweets.component';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [TweetsComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
